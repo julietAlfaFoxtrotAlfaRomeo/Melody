@@ -1,12 +1,12 @@
 /* =========== TOPBAR =========== */
 .row1 {
-  background-color: #26206b;
-  color: aliceblue;
+  background-color:  #ffffffc1;
+  color: rgb(47, 41, 41);
 }
 
 /* =========== NAVBAR =========== */
 .navber {
-  background-color: #e7e7e7 !important;
+  background-color: #ededed !important;
   height: 120px !important;
   z-index: 1000 !important;
 }
@@ -20,7 +20,7 @@
 .navbar-nav,
 .navbar-nav a,
 .navbar-toggler-icon {
-  color: #1b136d;
+  color: rgb(47, 41, 41);
   font-size: 20px !important;
   font-weight: bold;
   border: 2px solid transparent;
@@ -33,24 +33,25 @@
   margin-left: 10px;
 }
 
-.navbar-nav a:hover {
+/* .navbar-nav a:hover {
   border-radius: 20px !important;
-  border: 3px solid #443ab7;
-  background-color: #1b136d !important;
+  border: 3px solid #ffffff;
+  background-color: #ffffff !important;
   color: #b0b0b0 !important;
   font-size: 25px !important;
   transition: ease-in-out 0.5s;
-}
+} */
 
 .btn-group {
   margin-top: 30px;
 }
 
 .dropdown-menu {
-  border: 2px solid black;
+  border: 2px solid rgb(244, 0, 0);
   width: 400px;
   margin-left: -1rem;
   border-radius: 10px;
+  color: aliceblue;
 }
 
 .bg-war {
@@ -59,7 +60,7 @@
 }
 
 .warna {
-  background-color: #26206b;
+  background-color:rgb(33,37,41);
 }
 
 .back-to-top {
@@ -493,7 +494,7 @@
 }
 
 .bgbout {
-  background-color: #1b136d;
+  background-color: rgb(33,37,41);
   color: #e7e7e7;
 }
 
