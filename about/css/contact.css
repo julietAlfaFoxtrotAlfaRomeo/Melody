@@ -1,7 +1,7 @@
 /* =========== TOPBAR =========== */
 .row1 {
   background-color:  #ffffffc1;
-  color: rgb(47, 41, 41);
+  color: #cc55007b;
 }
 
 /* =========== NAVBAR =========== */
@@ -20,7 +20,7 @@
 .navbar-nav,
 .navbar-nav a,
 .navbar-toggler-icon {
-  color: rgb(47, 41, 41);
+  color: #cc55007b;
   font-size: 20px !important;
   font-weight: bold;
   border: 2px solid transparent;
@@ -60,7 +60,7 @@
 }
 
 .warna {
-  background-color:rgb(33,37,41);
+  background-color:#cc55007b;
 }
 
 .back-to-top {
@@ -494,7 +494,7 @@
 }
 
 .bgbout {
-  background-color: rgb(33,37,41);
+  background-color: #cc55007b;
   color: #e7e7e7;
 }
 
