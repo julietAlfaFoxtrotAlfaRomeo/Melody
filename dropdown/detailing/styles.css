@@ -1,0 +1,227 @@
+.picbg {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Adjust height as needed */
+  background: url("img/detailing1.jpeg") no-repeat center center;
+  background-size: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+}
+
+/* Adding a dark overlay on the background image */
+.picbg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(94, 94, 94, 0.377); /* Adjust opacity as needed */
+  z-index: 1;
+}
+
+/* Style for the text overlay */
+.pic-text {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #ff9100; /* Color of the text */
+  padding: 20px;
+}
+
+.pic-text h1 {
+  margin: 0;
+  font-size: 3em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Additional styles for the description text */
+.description {
+  margin-top: 20px;
+  padding: 0 20px;
+  text-align: justify;
+}
+
+.description p {
+  font-size: 1.25em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .picbg {
+    height: 300px; /* Height for small screens */
+  }
+
+  .pic-text h1 {
+    font-size: 2em; /* Font size for small screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .picbg {
+    height: 200px; /* Height for very small screens */
+  }
+
+  .pic-text h1 {
+    font-size: 1.5em; /* Font size for very small screens */
+  }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* memastikan tiga kolom */
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.grid-item {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* gunakan rgba untuk bayangan yang lebih halus */
+}
+
+@media (max-width: 1000px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* satu kolom untuk layar kecil */
+  }
+
+  .content-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-container,
+  .text-box {
+    max-width: 100%;
+    margin: 10px 0;
+  }
+}
+
+.content__title {
+  text-align: center; /* Center the text horizontally */
+  margin: 0 auto; /* Center the element itself horizontally */
+}
+
+/*** Footer ***/
+.footer .btn.btn-social {
+  margin-right: 5px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--light);
+  font-weight: normal;
+  border: 1px solid #ffffff;
+  border-radius: 35px;
+  transition: 0.3s;
+}
+
+.footer .btn.btn-social:hover {
+  color: var(--primary);
+}
+
+.footer .btn.btn-link {
+  display: block;
+  margin-bottom: 5px;
+  padding: 0;
+  text-align: left;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: normal;
+  text-transform: capitalize;
+  transition: 0.3s;
+}
+
+.footer .btn.btn-link::before {
+  position: relative;
+  content: "\f105";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 10px;
+}
+
+.footer .btn.btn-link:hover {
+  letter-spacing: 1px;
+  box-shadow: none;
+}
+
+.footer .copyright {
+  padding: 25px 0;
+  font-size: 15px;
+  border-top: 1px solid rgba(256, 256, 256, 0.1);
+}
+
+.footer .copyright a {
+  color: var(--light);
+}
+
+.footer .footer-menu a {
+  margin-right: 15px;
+  padding-right: 15px;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer .footer-menu a:last-child {
+  margin-right: 0;
+  padding-right: 0;
+  border-right: none;
+}
+
+/* ==================================================================================================
+=====================================================================================================
+======================== CSS RAFI ============================== CSS RAFI ===========================
+=====================================================================================================
+===================================================================================================== */
+
+/* ============= BUTTON LOGIN ===========  */
+.user {
+  color: #1d24ca;
+}
+
+.buttonlogin {
+  background-color: #98abee;
+  border: none;
+}
+
+.buttonlogin .btn:hover {
+  background-color: #011b7a;
+}
+
+.buttonlogin .btn:hover i.user {
+  color: white; /* Mengubah warna ikon user menjadi putih saat dihover */
+}
+/* ============= BUTTON LOGIN END ===========  */
+
+.img-fluid {
+  border-radius: 10px;
+}
+
+.img-fluid :hover {
+  border-radius: 30px !important;
+}
+
+/* ============= MATERI ===========  */
+.service-item {
+  background: #98abee63;
+  transition: 0.5s;
+  border-radius: 4px;
+}
+
+.service-item:hover {
+  margin-top: -10px;
+  background: var(--primary);
+  border-radius: 20px;
+}
+
+.service-item * {
+  transition: 0.5s;
+}
+
+.service-item:hover * {
+  color: var(--light) !important;
+} /* ============= MATERI END ===========  */

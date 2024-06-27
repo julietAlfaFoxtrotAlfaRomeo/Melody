@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-  --primary: #262a9b;
+  --primary: #cc55007b;
   --light: #f0fbfc;
   --dark: #181d38;
 }
@@ -434,7 +434,7 @@
 
 /* ============= BUTTON LOGIN ===========  */
 .user {
-  color: #1d24ca;
+  color: #cc55007b;
 }
 
 .buttonlogin {
@@ -443,7 +443,7 @@
 }
 
 .buttonlogin .btn:hover {
-  background-color: #011b7a;
+  background-color: #cc55007b;
 }
 
 .buttonlogin .btn:hover i.user {
@@ -459,9 +459,13 @@
   border-radius: 30px !important;
 }
 
+.bg-footer{
+  background-color: #cc55007b;
+}
+
 /* ============= MATERI ===========  */
 .service-item {
-  background: #98abee63;
+  background: #cc55007b;
   transition: 0.5s;
   border-radius: 4px;
 }

@@ -1,12 +1,12 @@
 /* =========== TOPBAR =========== */
 .row1 {
-  background-color:  #ffffffc1;
-  color: rgb(47, 41, 41);
+  background-color:  #ffffff7b;
+  color: #0000007b;
 }
 
 /* =========== NAVBAR =========== */
 .navber {
-  background-color: #ededed !important;
+  background-color: #cc55007b !important;
   height: 120px !important;
   z-index: 1000 !important;
 }
@@ -60,7 +60,7 @@
 }
 
 .warna {
-  background-color:rgb(33,37,41);
+  background-color:#cc55007b;
 }
 
 .back-to-top {
@@ -222,7 +222,9 @@
   background: var(--primary);
   z-index: -1;
 }
-
+.bg-footer{
+  background-color: #cc55007b;
+}
 .section-title.text-start::before {
   width: calc(100% + 40px);
   left: 0;
@@ -494,7 +496,7 @@
 }
 
 .bgbout {
-  background-color: rgb(33,37,41);
+  background-color: #cc55007b;
   color: #e7e7e7;
 }
 
