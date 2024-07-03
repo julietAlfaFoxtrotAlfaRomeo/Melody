@@ -1,12 +1,11 @@
 /* =========== TOPBAR =========== */
 .row1 {
-  background-color:  #ffffff7b;
-  color: #0000007b;
+  background-color: #343b48;
+  color: #ffffff;
 }
 
 /* =========== NAVBAR =========== */
 .navber {
-  background-color: #cc55007b !important;
   height: 120px !important;
   z-index: 1000 !important;
 }
@@ -15,12 +14,13 @@
   width: 190px;
   height: auto;
 }
+
 .navbar-custom,
 .navbar-brand,
 .navbar-nav,
 .navbar-nav a,
 .navbar-toggler-icon {
-  color: rgb(47, 41, 41);
+  color: rgb(255, 255, 255);
   font-size: 20px !important;
   font-weight: bold;
   border: 2px solid transparent;
@@ -60,7 +60,7 @@
 }
 
 .warna {
-  background-color:#cc55007b;
+  background-color: #cc55007b;
 }
 
 .back-to-top {
@@ -183,7 +183,7 @@
   background-size: cover;
 }
 
-.page-header .breadcrumb-item + .breadcrumb-item::before {
+.page-header .breadcrumb-item+.breadcrumb-item::before {
   color: var(--light);
 }
 
@@ -222,9 +222,11 @@
   background: var(--primary);
   z-index: -1;
 }
-.bg-footer{
+
+.bg-footer {
   background-color: #cc55007b;
 }
+
 .section-title.text-start::before {
   width: calc(100% + 40px);
   left: 0;
@@ -492,7 +494,7 @@
 }
 
 .ourmain {
-  color: #1b136d !important;
+  color: #ffffff !important;
 }
 
 .bgbout {
@@ -526,6 +528,7 @@
 .bg-darki {
   background-color: #14183e !important;
 }
+
 .footer .btn.btn-social {
   margin-right: 5px;
   width: 40px;

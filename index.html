@@ -1,321 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Melody autoo service</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="" name="keywords" />
-    <meta content="" name="description" />
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon" />
+<head>
+  <meta charset="utf-8" />
+  <title>Melody autoo service</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="" name="keywords" />
+  <meta content="" name="description" />
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Favicon -->
+  <link href="img/favicon.ico" rel="icon" />
 
-    <!-- Icon Font Stylesheet -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
+    rel="stylesheet" />
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet" />
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="style/bootsrap.min.css" rel="stylesheet" />
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet" />
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
 
-    <!-- Template Stylesheet -->
-    <link href="style/style.css" rel="stylesheet" />
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="style/bootsrap.min.css" rel="stylesheet" />
 
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-  </head>
+  <!-- Template Stylesheet -->
+  <link href="style/style.css" rel="stylesheet" />
 
-  <body class="no-sidebar">
-    <!-- Spinner Start -->
-    <div
-      id="spinner"
-      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
-    >
-      <div
-        class="spinner-border"
-        style="width: 3rem; height: 3rem"
-        role="status"
-      >
-        <span class="sr-only">Loading...</span>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body class="no-sidebar" style="background-color: #343b48;">
+  <!-- Spinner Start -->
+  <div id="spinner"
+    class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-border" style="width: 3rem; height: 3rem" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+  <!-- Spinner End -->
+  <div class="container-fluid bg-#343b48 p-0">
+    <div class="row1 gx-0 d-none d-lg-flex">
+      <div class="col-lg-7 px-5 text-start">
+        <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+          <small class="fa fa-map-marker-alt text-primary me-2"></small>
+          <small>Jl. R.A. Kartini, Kota Jakarta Selatan, 12430</small>
+        </div>
+        <div class="h-100 d-inline-flex align-items-center py-3">
+          <small class="far fa-clock text-primary me-2"></small>
+          <small>09 : 00 - 18 : 00</small>
+        </div>
+      </div>
+      <div class="col-lg-5 px-5 text-end">
+        <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+          <small class="fa fa-phone-alt text-primary me-2"></small>
+          <small>1575773</small>
+        </div>
+        <div class="h-100 d-inline-flex align-items-center">
+          <a class="btn btn-sm-square  text-primary me-1" href=""><i class="fab fa-facebook-f"></i></a>
+          <a class="btn btn-sm-square  text-primary me-0" href=""><i class="fab fa-instagram"></i></a>
+        </div>
       </div>
     </div>
-    <!-- Spinner End -->
-
-    <!-- Navbar Start -->
-    <nav
-      class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0"
-    >
-      <a
-        href="index.html"
-        class="navbar-brand d-flex align-items-center px-4 px-lg-5"
-      >
-        <img
-          src="assets/img/logo.png"
-          style="width: 100px; height: 70px"
-          alt="Bengkel - LOGO"
-        />
-      </a>
-      <button
-        type="button"
-        class="navbar-toggler me-4"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarCollapse"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <div class="navbar-nav ms-auto p-4 p-lg-0">
-          <a href="index.html" class="nav-item nav-link">Home</a>
-          <a href="/about/about-us.html" class="nav-item nav-link">About Us</a>
-          <a href="/about/contact-us.html" class="nav-item nav-link">Contact</a>
-          <div class="nav-item dropdown">
-            <a
-              href="#"
-              class="nav-link dropdown-toggle"
-              data-bs-toggle="dropdown"
-              >More</a
-            >
-            <div class="dropdown-menu">
-              <a href="/dropdown/index.html" class="dropdown-item">Services</a>
-              <a href="/dropdown/cat/" class="dropdown-item">cat</a>
-              <a href="/dropdown/detailing/" class="dropdown-item">Detailing</a>
-              <a href="/dropdown/galeri/" class="dropdown-item">Gallery</a>
-              <a href="/dropdown/s&m/" class="dropdown-item">s&m</a>
-              <a href="/dropdown/jok/" class="dropdown-item">jok</a>
-            </div>
+  </div>
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg bg-secondary navbar-light shadow sticky-top p-0">
+    <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+      <img src="assets/img/logo.png" style="width: 100px; height: 70px" alt="Bengkel - LOGO" />
+    </a>
+    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <div class="navbar-nav ms-auto p-4 p-lg-0">
+        <a href="index.html" class="nav-item nav-link">Home</a>
+        <a href="/about/about-us.html" class="nav-item nav-link">About Us</a>
+        <a href="/about/contact-us.html" class="nav-item nav-link">Contact</a>
+        <div class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">More</a>
+          <div class="dropdown-menu">
+            <a href="/dropdown/index.html" class="dropdown-item">Services</a>
+            <a href="/dropdown/cat/" class="dropdown-item">cat</a>
+            <a href="/dropdown/detailing/" class="dropdown-item">Detailing</a>
+            <a href="/dropdown/galeri/" class="dropdown-item">Gallery</a>
+            <a href="/dropdown/s&m/" class="dropdown-item">s&m</a>
+            <a href="/dropdown/jok/" class="dropdown-item">jok</a>
           </div>
         </div>
       </div>
-    </nav>
-    <!-- Navbar End -->
+    </div>
+  </nav>
+  <!-- Navbar End -->
 
-    <!-- Carousel Start -->
-    <div
-      id="carouselExampleFade"
-      class="carousel slide carousel-fade mb-5"
-      style="overflow: hidden"
-    >
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="assets/img/carosel/M E L O D Y (2).png" class="d-block
+  <!-- Carousel Start -->
+  <div id="carouselExampleFade" class="carousel slide carousel-fade mb-5" style="overflow: hidden">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/img/carosel/M E L O D Y (1).png" class="d-block
           w-100" " alt=" ..." />
-        </div>
-        <div class="carousel-item">
-          <img src="assets/img/carosel/M E L O D Y.png" class="d-block w-100" "
+      </div>
+      <div class="carousel-item">
+        <img src="assets/img/carosel/M E L O D Y.png" class="d-block w-100" "
           alt=" ..." />
-        </div>
-        <div class="carousel-item">
-          <img src="assets/img/carosel/M E L O D Y (1).png" class="d-block
+      </div>
+      <div class="carousel-item">
+        <img src="assets/img/carosel/M E L O D Y (1).png" class="d-block
           w-100" " alt=" ..." />
-        </div>
       </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleFade"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleFade"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
-    <!-- Carousel End -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- Carousel End -->
 
-    <!-- Service Start -->
-    <div class="container-xxl py-5">
-      <div class="container">
-        <div class="text-center wow fadeInUp mt-5" data-wow-delay="0.1s">
-          <h6 class="section-title bg-white text-center px-3">LAYANAN</h6>
-          <h1 class="mb-5">Layanan Bengkel</h1>
+  <!-- Service Start -->
+  <div class="container-xxl py-5">
+    <div class="container">
+      <div class="text-center wow fadeInUp mt-5" data-wow-delay="0.1s">
+        <h6 class="section-title  text-center px-3">LAYANAN</h6>
+        <h1 class="mb-5">Layanan Bengkel</h1>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="service-item text-center pt-3">
+            <div class="p-4">
+              <i class="bx mb-1" style="font-size: 20px"><img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFWElEQVR4nO2dW4xdUxjHfx1tGarkKEU9uTwQLYKaF4k3EQ3KaF3Co0Qo3hoRiRdpXeoyg0R4UkUJEZcXnioRjSgtVZRRphK3Ijq9TJs4S1bz7eRkZ585+7LO2d/aa/2SL5lkzll77e8/a6+1vu/bayASiUQikYhLhoAlwCpgI/A5MAnsBw4DfwPbgTeB+4ER+U7EIXOBK4Hngd8AU9B2A2uAM1x2KmRawJYSQqRtGngOOKnuG2oCLUeiWPsTWFH3DTWBlkNRrD0LzK77pnyn5ViUd4Dhum/Kd04EPnUoyntxpOgbKc846FPwtByLcmPwHlX2+NoDLCBwhoBTFI2UcQLncuBb4HQlI8VuHhcRMOPiiB3AQiUj5WECflz92uGIr5WI8nOoAckLMpyxXcmcspQAWdXFGV85EuWfCoKsJkBen8EhVpSTK7S9pOIIeYMA2dLDKV9WECVZLJQ1e+3gmMzhGLv6OrVgu8OSOawaog+OAzmds63gDvq2imIk+5HgOFDAQVsLiPKRA0EOEiC7CzrpixzpV1vU0HYgiM3dB8fWEo7KEmVYHlObHImRrPKC47WSzkpEORdYKxOwcWyv4CFHATcALwHfA/ty3mzCPRUcVmXT18iN4VXAzpI3m3BJn51axS7CE4bkMVHlWZ0wC/hBgfPTNil9U8/RwKsObriTBxUIkLaH8IAFwMcZnT8kBQI2OnpsiXYXyZrfKLHDDpJlfefsLvOFHdoXO2h/rQIhEhtDOXaj9UeXpaerVOcJXa4xaNsjYXu1XCdl/iZlHwLzHV9rmcNNXVm7CcXcB/yX0ekX+ljl90iNYtg6X7XL2qcyOtwGHujzta3Qb9UgxttaS0mHuzjkEHDrgPowp0cm0bW9DxyDQmxm7pOMDttEzxUD7ov9a103gDllXMI/6jhHYlHpDv8EnFdzeOb3Pgri1bJ2m5J38uZJoO/fpgpiYzTnA3dLZcXBLu9LWEdoYmGTBDkTuEPC5L2ydC9qXXHgsSBFBEis7UFQzfggSPoRVCYE8YskmrRjtApSZgR02l4Jf6yW4KAvhcVGkyBXSw66zAj4S3aj9wIXeiSASkHmy6onRAHUCWId+UHAAqgT5PbABVAnyKZUAzaFemlAAqgTZG+qgbMIG1O3IJUbaBgmCqILEwXRhYmC6MJEQXRhfBTEhs5XAhuACSnj2S81tBvkaDut4fXGCXKNpF17dWSXfNY3jC+CzJKigKIdWudLlbdvgmTVUeW1J/AH44Mg12d8zubJn5SK9OPElopwWTn05fiB0S7IHJkP0ifZ2AxiNxZnvLC/S9rSjtEWy0pXm9+SMTJmEqNTlOnUd29GP6ZuQTanGng3JcrG1O/tYyovT6e+a9vSjqlbkLsKXsCG5vNyWR9u0PTZYbULMrfgQVxFituOV+Bw45sgltOAz6IgegRBVkB3SsZwytGxdCMKRoDxcYTMRHpSt/uMvIylvhsndQdkLXvtkjbP4ZNx2dsHum0MF/c4izC9MfwxbgzdsTzj2Tgt+4wRWXnNk5/HMkaGLbK+Fj8w2ueQhDKR3sQewx+ML4LYEPrjJcWI4fc+skzmg15CTEjxtm8YX0ZIJ7MlTbu+41CxffLzevmnJTGFy+AEaTLGxxHSZEwURBcmCqILEwXRhYmC6MJEQXRhoiC6MFEQXUw5FMQeZhOpyHcOBfmmamciHKnedyWIPQUjUpEVDgUZrdqZCEcypFkn3xW1CSmxivQpQ1rE2p6+G6OaRysIsqbuzjeRoRKHLrfljPlQT8EY2FHoeeaUnR4VcjRioh8FXpa9xZTYDsmQjnry7kskEolEaC7/AzgaajRG4911AAAAAElFTkSuQmCC" /></i>
+              <h5 class="mb-3">service & maintenance</h5>
+              <p>
+                Layanan perbaikan dan pengecatan bodi kendaraan untuk
+                mengembalikan tampilan seperti baru.
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="row g-4">
-          <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="service-item text-center pt-3">
-              <div class="p-4">
-                <i class="bx mb-1" style="font-size: 20px"
-                  ><img
-                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFWElEQVR4nO2dW4xdUxjHfx1tGarkKEU9uTwQLYKaF4k3EQ3KaF3Co0Qo3hoRiRdpXeoyg0R4UkUJEZcXnioRjSgtVZRRphK3Ijq9TJs4S1bz7eRkZ585+7LO2d/aa/2SL5lkzll77e8/a6+1vu/bayASiUQikYhLhoAlwCpgI/A5MAnsBw4DfwPbgTeB+4ER+U7EIXOBK4Hngd8AU9B2A2uAM1x2KmRawJYSQqRtGngOOKnuG2oCLUeiWPsTWFH3DTWBlkNRrD0LzK77pnyn5ViUd4Dhum/Kd04EPnUoyntxpOgbKc846FPwtByLcmPwHlX2+NoDLCBwhoBTFI2UcQLncuBb4HQlI8VuHhcRMOPiiB3AQiUj5WECflz92uGIr5WI8nOoAckLMpyxXcmcspQAWdXFGV85EuWfCoKsJkBen8EhVpSTK7S9pOIIeYMA2dLDKV9WECVZLJQ1e+3gmMzhGLv6OrVgu8OSOawaog+OAzmds63gDvq2imIk+5HgOFDAQVsLiPKRA0EOEiC7CzrpixzpV1vU0HYgiM3dB8fWEo7KEmVYHlObHImRrPKC47WSzkpEORdYKxOwcWyv4CFHATcALwHfA/ty3mzCPRUcVmXT18iN4VXAzpI3m3BJn51axS7CE4bkMVHlWZ0wC/hBgfPTNil9U8/RwKsObriTBxUIkLaH8IAFwMcZnT8kBQI2OnpsiXYXyZrfKLHDDpJlfefsLvOFHdoXO2h/rQIhEhtDOXaj9UeXpaerVOcJXa4xaNsjYXu1XCdl/iZlHwLzHV9rmcNNXVm7CcXcB/yX0ekX+ljl90iNYtg6X7XL2qcyOtwGHujzta3Qb9UgxttaS0mHuzjkEHDrgPowp0cm0bW9DxyDQmxm7pOMDttEzxUD7ov9a103gDllXMI/6jhHYlHpDv8EnFdzeOb3Pgri1bJ2m5J38uZJoO/fpgpiYzTnA3dLZcXBLu9LWEdoYmGTBDkTuEPC5L2ydC9qXXHgsSBFBEis7UFQzfggSPoRVCYE8YskmrRjtApSZgR02l4Jf6yW4KAvhcVGkyBXSw66zAj4S3aj9wIXeiSASkHmy6onRAHUCWId+UHAAqgT5PbABVAnyKZUAzaFemlAAqgTZG+qgbMIG1O3IJUbaBgmCqILEwXRhYmC6MJEQXRhfBTEhs5XAhuACSnj2S81tBvkaDut4fXGCXKNpF17dWSXfNY3jC+CzJKigKIdWudLlbdvgmTVUeW1J/AH44Mg12d8zubJn5SK9OPElopwWTn05fiB0S7IHJkP0ifZ2AxiNxZnvLC/S9rSjtEWy0pXm9+SMTJmEqNTlOnUd29GP6ZuQTanGng3JcrG1O/tYyovT6e+a9vSjqlbkLsKXsCG5vNyWR9u0PTZYbULMrfgQVxFituOV+Bw45sgltOAz6IgegRBVkB3SsZwytGxdCMKRoDxcYTMRHpSt/uMvIylvhsndQdkLXvtkjbP4ZNx2dsHum0MF/c4izC9MfwxbgzdsTzj2Tgt+4wRWXnNk5/HMkaGLbK+Fj8w2ueQhDKR3sQewx+ML4LYEPrjJcWI4fc+skzmg15CTEjxtm8YX0ZIJ7MlTbu+41CxffLzevmnJTGFy+AEaTLGxxHSZEwURBcmCqILEwXRhYmC6MJEQXRhoiC6MFEQXUw5FMQeZhOpyHcOBfmmamciHKnedyWIPQUjUpEVDgUZrdqZCEcypFkn3xW1CSmxivQpQ1rE2p6+G6OaRysIsqbuzjeRoRKHLrfljPlQT8EY2FHoeeaUnR4VcjRioh8FXpa9xZTYDsmQjnry7kskEolEaC7/AzgaajRG4911AAAAAElFTkSuQmCC"
-                /></i>
-                <h5 class="mb-3">service & maintenance</h5>
-                <p>
-                  Layanan perbaikan dan pengecatan bodi kendaraan untuk
-                  mengembalikan tampilan seperti baru.
-                </p>
-              </div>
+        <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+          <div class="service-item text-center pt-3">
+            <div class="p-4">
+              <i class="bx mb-4" style="font-size: 40px"><img
+                  src="data:image/png;base64,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" /></i>
+              <h5 class="mb-3">Cat & body repair</h5>
+              <p>
+                Layanan detailing untuk menjaga dan memperbaiki tampilan
+                kendaraan Anda.
+              </p>
             </div>
           </div>
-          <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="service-item text-center pt-3">
-              <div class="p-4">
-                <i class="bx mb-4" style="font-size: 40px"
-                  ><img
-                    src="data:image/png;base64,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"
-                /></i>
-                <h5 class="mb-3">Cat & body repair</h5>
-                <p>
-                  Layanan detailing untuk menjaga dan memperbaiki tampilan
-                  kendaraan Anda.
-                </p>
-              </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+          <div class="service-item text-center pt-3">
+            <div class="p-4">
+              <i class="bx mb-4" style="font-size: 40px"><img
+                  src="data:image/png;base64,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" /></i>
+              <h1 class="mb-3" style="font-size: 20px">
+                Detailing & Coating
+              </h1>
+              <p>
+                Layanan perbaikan dan perawatan jok serta interior kendaraan
+                untuk kenyamanan maksimal.
+              </p>
             </div>
           </div>
-          <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="service-item text-center pt-3">
-              <div class="p-4">
-                <i class="bx mb-4" style="font-size: 40px"
-                  ><img
-                    src="data:image/png;base64,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"
-                /></i>
-                <h1 class="mb-3" style="font-size: 20px">
-                  Detailing & Coating
-                </h1>
-                <p>
-                  Layanan perbaikan dan perawatan jok serta interior kendaraan
-                  untuk kenyamanan maksimal.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
-            <div class="service-item text-center pt-3">
-              <div class="p-4">
-                <i class="bx mb-4" style="font-size: 40px"
-                  ><img
-                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAG4klEQVR4nO2da2wVRRTH/0ULIogQMaFoDGL5AOoXUHlEoqgfjAoqRk1FiYlSiNFIjGh8FP2gQlATX/iISEx8VHy/QyK+6gMiUdRGURRLq2iplSqRFrRlzInnJstwae89Ozt7dju/5CTNTXtmzvy7u7NnzswFAoFAIBDID5MAvA2gA4BJyMj3WwAmph2sdqYC2JmgELb9DWBy2kFrZp1HMQq2Nu2gtXJsCmIUbELawWvk9hQFobYDFt+kKMjGoMbeTEhRDBNuW/syT4EgV4SrJAiilmoA3SleHdT20WkPgjaWpCjInWkHr5EKALUAGgH840EEauNrAFdy24ESMZb5/vuARRBEGSZcIbowQRBdmCCILkwQxA+VAGoA1AP4CUBniu8hndyHZwFczH3rV5wLoCVFAUwf1gxgJvoB9AJ2r4IBNyXa3Xl/aXxAwSCbMo3+gXJJjYLBNUK7CDnjEAC/KhhYI7RWAMOQI65RMKgmpl2FHLFewYCamPYZcsJoAHsUDKiJaRTDkcgBCxQMpnFk85EDXnc0GLsArAFwF896JvPVN4LbqeCf6bMp/Ma9FMB7AHY76gPFkmkGO6jVfZ+nzENjzvIuAdAQsy87OabMclaM4L8EcEoCfZrBS7fSflFMmWW5MOiVAA5KsF/k+0lh3yimzNIsCPiZXvJHVQAuBHAPgA+4/JReOLs4Y7uVP6Pb3DIAFwAYtR9fAzi7W27/KKZMcrwg2O0AhhfxdQaAV4S1W/8CeBnA6UX80iTgT4FPii1z3CQI9OEit5YXYtzvbVsFYJDVxmMCPxRb5vhYEOjZlo+lDsUo2B1WG7MEPii2TDFScHvpBnCodY9PIiHZYj2j6LbVI+grxZgZLhMM1HqPWxSoljjKFwIflyJDPCcI8H7Lx+UJCjLHautBgQ+KMRMcKNzSPM/y81CCgtxntTVf4KODY1XPDOEgTbX8vJOgILQPPsrJQj+nIgMsE6a2h1l+tiQoyA9WW8OFfihW9Xzl4O13kGDmU+7Lol179Ysw36aaUcLFqHdT2AQ6zmrzQ4GPPZzOUYt0ZvREkUI6k7DZWVtpsnEuFFMvDKrO8nO9B0Gutdq8TejnaSimVRiU/ZL1qAdB7DT6XKEfyiao5IgYg0PTTl9T3oKt3qtFYHoMX7RsrA5Jkq5gx1i+vvUgCK0aRhkXw9c5UIj0HmyKrJdv9yBIm9XmsBi+7GegCl4SBkMrfVEGeqrj6inyLtIl9PUiFPKJMJgmy89RHsQoGD334i45k30EhUjv+3SKXJSTPApC5zu6KHmlww7U8Zuj4rNZHgWxVyjfFPqhtIs6pPffxy0/tSkeybQyxmGa6tjt6OCXxR4FucXRGj5VNKrjd0cpjOUeBaEtdlGuE/qhDIU6NguDobrdKKs8CkK5tyhzHK2vqGCDo6zrao+C0OnWUWYK/XwOhUjWE4otg671KIhdX3Wa0A+VtarjVWEw9N6R1nGxjVbbU4R+KHZ1SFPmx1l+fvYoSLODemTDsefmZOqxlp8/PApiJxirhX4osZqbvYT2doEdHgWhyvcoo/O09/A8YTB2+c8uj4J0OioHohoAdUgfiHb1X49HQahoOkql0I/K7yAZyUuvaR6IbDxbN8esuhJ+LJf1+PhP/4vTFpvZWvmzpNul2FZk7TTs6bznzwgLmT/l1MYSnjCcCWA8gMNL3CI9lH93PP/tAvZVzy+f0u+42lqkKCMzjC4hpdLMS6B1/HAc47F/Y7jNxdyHvk6526CxwuQEAM8D2Mad3MJvqjW8Hl5s0z5lcNt5mtnAJ7XN1hgc/u/TbO5jA98C23l7BMViM5Bjfy1SIN7GY0RjlSi1fTwbfgQwDf4YwbW1Y9mqIkdt+GAax9xbUTedLZ/YtLaUGRT9zsKYbQ3m9W46r+QG/u98g3NP7SWuTnbx7zby35KPRexzkoODCRaWMR4nQkHykJZmh5Tg9zBOwdfxZf6dp6lzN3/3FLV5K/eB+tIXQzi2ctqiEinndAhnJDfv5xs1nwKwycPAmzJtE/fNZiLHIpk50pXqnLgpDZu0B9547C99V4lz4m4x68+CNCUhyBpFAZqMCULpFefE3bPRnwV5JAlBFikK0GRMENoR5pzzFQVoMiYIrRU5R7reHATBPnUDTqiMmdq2SfsKMJ76uyPJ7yORFiP3Z0FWIEGqYpTp9EdBWno589EZ1bzJJgiCXsdgXZHNrIlRwXWwdNZHuEKw1xhs5D3vByAFBvCxrd+HWxaaeL1IxRlaBWF6W6yxycszpFmTEDaV3LliD36brAuyDcCNCZ/A7YyBLEx07cAmq4K0sRCZPJT/YABXc7GATdYEaeBYKKZAIBAIBKCN/wD0aYk/5aqaDQAAAABJRU5ErkJggg=="
-                /></i>
-                <h5 class="mb-3">Jok & interior mobil</h5>
-                <p>
-                  Layanan servis dan pemeliharaan rutin untuk memastikan
-                  kendaraan Anda selalu dalam kondisi prima.
-                </p>
-              </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+          <div class="service-item text-center pt-3">
+            <div class="p-4">
+              <i class="bx mb-4" style="font-size: 40px"><img
+                  src="data:image/png;base64,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" /></i>
+              <h5 class="mb-3">Jok & interior mobil</h5>
+              <p>
+                Layanan servis dan pemeliharaan rutin untuk memastikan
+                kendaraan Anda selalu dalam kondisi prima.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Service End -->
+  </div>
+  <!-- Service End -->
 
-    <!-- Categories Start -->
-    <div class="container-xxl py-5 category">
-      <div class="container">
-        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-          <h6 class="section-title bg-white text-center px-3 mb-2">ACTIVITY</h6>
-          <h1 class="mb-5">Our Activities</h1>
-        </div>
-        <div class="row g-3">
-          <div class="col-lg-7 col-md-6">
-            <div class="row g-3">
-              <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
-                <a class="position-relative d-block overflow-hidden" href="">
-                  <img
-                    class="img-fluid"
-                    src="assets/img/cat/IMG-20240611-WA0003.jpg"
-                    alt=""
-                  />
-                  <!-- <div
+  <!-- Categories Start -->
+  <div class="container-xxl py-5 category">
+    <div class="container">
+      <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+        <h6 class="section-title  text-center px-3 mb-2">ACTIVITY</h6>
+        <h1 class="mb-5">Our Activities</h1>
+      </div>
+      <div class="row g-3">
+        <div class="col-lg-7 col-md-6">
+          <div class="row g-3">
+            <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
+              <a class="position-relative d-block overflow-hidden" href="">
+                <img class="img-fluid" src="assets/img/cat/IMG-20240611-WA0003.jpg" alt="" />
+                <!-- <div
                     class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
                     style="margin: 1px"
                   >
                     <h5 class="m-0">Web Design</h5>
                     <small class="">49 Courses</small>
                   </div> -->
-                </a>
-              </div>
-              <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
-                <a class="position-relative d-block overflow-hidden" href="">
-                  <img
-                    class="img-fluid"
-                    src="assets/img/cat/IMG-20240611-WA0021.jpg"
-                    alt=""
-                  />
-                  <!-- <div
+              </a>
+            </div>
+            <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
+              <a class="position-relative d-block overflow-hidden" href="">
+                <img class="img-fluid" src="assets/img/cat/IMG-20240611-WA0021.jpg" alt="" />
+                <!-- <div
                     class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
                     style="margin: 1px"
                   >
                     <h5 class="m-0">Graphic Design</h5>
                     <small class="">49 Courses</small>
                   </div> -->
-                </a>
-              </div>
-              <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
-                <a class="position-relative d-block overflow-hidden" href="">
-                  <img
-                    class="img-fluid"
-                    src="assets/img/cat/IMG-20240611-WA0004.jpg"
-                    alt=""
-                  />
-                  <!-- <div
+              </a>
+            </div>
+            <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
+              <a class="position-relative d-block overflow-hidden" href="">
+                <img class="img-fluid" src="assets/img/cat/IMG-20240611-WA0004.jpg" alt="" />
+                <!-- <div
                     class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
                     style="margin: 1px"
                   >
                     <h5 class="m-0">Video Editing</h5>
                     <small class="">49 Courses</small>
                   </div> -->
-                </a>
-              </div>
+              </a>
             </div>
           </div>
-          <div
-            class="col-lg-5 col-md-6 wow zoomIn"
-            data-wow-delay="0.7s"
-            style="min-height: 340px"
-          >
-            <a class="position-relative d-block h-100 overflow-hidden" href="">
-              <img
-                class="img-fluid position-absolute w-100 h-100"
-                src="assets/img/cat/IMG-20240611-WA0005.jpg"
-                alt=""
-                style="object-fit: cover"
-              />
-              <!-- <div
+        </div>
+        <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 340px">
+          <a class="position-relative d-block h-100 overflow-hidden" href="">
+            <img class="img-fluid position-absolute w-100 h-100" src="assets/img/cat/IMG-20240611-WA0005.jpg" alt=""
+              style="object-fit: cover" />
+            <!-- <div
                 class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
                 style="margin: 1px"
               >
                 <h5 class="m-0">Online Marketing</h5>
                 <small class="">49 Courses</small>
               </div> -->
-            </a>
-          </div>
+          </a>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Categories Start -->
+  <!-- Categories Start -->
 
-    <!-- Bengkel Start -->
+  <!-- Bengkel Start -->
 
-    <!-- Bengkel End -->
+  <!-- Bengkel End -->
 
-    <!-- ==========================================================================================================
+  <!-- ==========================================================================================================
     ===============================================================================================================
     ===============================================================================================================
     ===============================================================================================================
@@ -326,167 +273,135 @@
     ===============================================================================================================
     ===============================================================================================================
     =========================================================================================================== -->
-    <!-- Student Start -->
-    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-      <div class="container">
-        <div class="text-center">
-          <h6 class="section-title bg-white text-center px-3">Testimonial</h6>
-          <h1 class="mb-5">Apa Kata Klien Kami!</h1>
+  <!-- Student Start -->
+  <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container">
+      <div class="text-center">
+        <h6 class="section-title  text-center px-3">Testimonial</h6>
+        <h1 class="mb-5">Apa Kata Klien Kami!</h1>
+      </div>
+      <div class="owl-carousel testimonial-carousel position-relative">
+        <div class="testimonial-item text-center">
+          <img class="border rounded-circle p-2 mx-auto mb-3" src="assets/mekanik/mekanik.png"
+            style="width: 80px; height: 80px" />
+          <h5 class="mb-0">Client Name</h5>
+          <p>Profession</p>
+          <div class="testimonial-text  text-center p-4">
+            <p class="mb-0">
+              Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam
+              amet diam et eos. Clita erat ipsum et lorem et sit.
+            </p>
+          </div>
         </div>
-        <div class="owl-carousel testimonial-carousel position-relative">
-          <div class="testimonial-item text-center">
-            <img
-              class="border rounded-circle p-2 mx-auto mb-3"
-              src="assets/mekanik/mekanik.png"
-              style="width: 80px; height: 80px"
-            />
-            <h5 class="mb-0">Client Name</h5>
-            <p>Profession</p>
-            <div class="testimonial-text bg-light text-center p-4">
-              <p class="mb-0">
-                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam
-                amet diam et eos. Clita erat ipsum et lorem et sit.
-              </p>
-            </div>
+        <div class="testimonial-item text-center">
+          <img class="border rounded-circle p-2 mx-auto mb-3" src="assets/mekanik/mekanik.png"
+            style="width: 80px; height: 80px" />
+          <h5 class="mb-0">Client Name</h5>
+          <p>Profession</p>
+          <div class="testimonial-text  text-center p-4">
+            <p class="mb-0">
+              Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam
+              amet diam et eos. Clita erat ipsum et lorem et sit.
+            </p>
           </div>
-          <div class="testimonial-item text-center">
-            <img
-              class="border rounded-circle p-2 mx-auto mb-3"
-              src="assets/mekanik/mekanik.png"
-              style="width: 80px; height: 80px"
-            />
-            <h5 class="mb-0">Client Name</h5>
-            <p>Profession</p>
-            <div class="testimonial-text bg-light text-center p-4">
-              <p class="mb-0">
-                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam
-                amet diam et eos. Clita erat ipsum et lorem et sit.
-              </p>
-            </div>
+        </div>
+        <div class="testimonial-item text-center">
+          <img class="border rounded-circle p-2 mx-auto mb-3" src="assets/mekanik/mekanik.png"
+            style="width: 80px; height: 80px" />
+          <h5 class="mb-0">Client Name</h5>
+          <p>Profession</p>
+          <div class="testimonial-text  text-center p-4">
+            <p class="mb-0">
+              Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam
+              amet diam et eos. Clita erat ipsum et lorem et sit.
+            </p>
           </div>
-          <div class="testimonial-item text-center">
-            <img
-              class="border rounded-circle p-2 mx-auto mb-3"
-              src="assets/mekanik/mekanik.png"
-              style="width: 80px; height: 80px"
-            />
-            <h5 class="mb-0">Client Name</h5>
-            <p>Profession</p>
-            <div class="testimonial-text bg-light text-center p-4">
-              <p class="mb-0">
-                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam
-                amet diam et eos. Clita erat ipsum et lorem et sit.
-              </p>
-            </div>
+        </div>
+        <div class="testimonial-item text-center">
+          <img class="border rounded-circle p-2 mx-auto mb-3" src="assets/mekanik/mekanik.png"
+            style="width: 80px; height: 80px" />
+          <h5 class="mb-0">Client Name</h5>
+          <p>Profession</p>
+          <div class="testimonial-text  text-center p-4">
+            <p class="mb-0">
+              Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam
+              amet diam et eos. Clita erat ipsum et lorem et sit.
+            </p>
           </div>
-          <div class="testimonial-item text-center">
-            <img
-              class="border rounded-circle p-2 mx-auto mb-3"
-              src="assets/mekanik/mekanik.png"
-              style="width: 80px; height: 80px"
-            />
-            <h5 class="mb-0">Client Name</h5>
-            <p>Profession</p>
-            <div class="testimonial-text bg-light text-center p-4">
-              <p class="mb-0">
-                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam
-                amet diam et eos. Clita erat ipsum et lorem et sit.
-              </p>
-            </div>
+        </div>
+        <div class="testimonial-item text-center">
+          <img class="border rounded-circle p-2 mx-auto mb-3" src="assets/mekanik/mekanik.png"
+            style="width: 80px; height: 80px" />
+          <h5 class="mb-0">Client Name</h5>
+          <p>Profession</p>
+          <div class="testimonial-text  text-center p-4">
+            <p class="mb-0">
+              Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam
+              amet diam et eos. Clita erat ipsum et lorem et sit.
+            </p>
           </div>
-          <div class="testimonial-item text-center">
-            <img
-              class="border rounded-circle p-2 mx-auto mb-3"
-              src="assets/mekanik/mekanik.png"
-              style="width: 80px; height: 80px"
-            />
-            <h5 class="mb-0">Client Name</h5>
-            <p>Profession</p>
-            <div class="testimonial-text bg-light text-center p-4">
-              <p class="mb-0">
-                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam
-                amet diam et eos. Clita erat ipsum et lorem et sit.
-              </p>
-            </div>
+        </div>
+        <div class="testimonial-item text-center">
+          <img class="border rounded-circle p-2 mx-auto mb-3" src="assets/mekanik/mekanik.png"
+            style="width: 80px; height: 80px" />
+          <h5 class="mb-0">Client Name</h5>
+          <p>Profession</p>
+          <div class="testimonial-text  text-center p-4">
+            <p class="mb-0">
+              Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam
+              amet diam et eos. Clita erat ipsum et lorem et sit.
+            </p>
           </div>
-          <div class="testimonial-item text-center">
-            <img
-              class="border rounded-circle p-2 mx-auto mb-3"
-              src="assets/mekanik/mekanik.png"
-              style="width: 80px; height: 80px"
-            />
-            <h5 class="mb-0">Client Name</h5>
-            <p>Profession</p>
-            <div class="testimonial-text bg-light text-center p-4">
-              <p class="mb-0">
-                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam
-                amet diam et eos. Clita erat ipsum et lorem et sit.
-              </p>
-            </div>
-          </div>
-          <div class="testimonial-item text-center">
-            <img
-              class="border rounded-circle p-2 mx-auto mb-3"
-              src="assets/mekanik/mekanik.png"
-              style="width: 80px; height: 80px"
-            />
-            <h5 class="mb-0">Client Name</h5>
-            <p>Profession</p>
-            <div class="testimonial-text bg-light text-center p-4">
-              <p class="mb-0">
-                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam
-                amet diam et eos. Clita erat ipsum et lorem et sit.
-              </p>
-            </div>
+        </div>
+        <div class="testimonial-item text-center">
+          <img class="border rounded-circle p-2 mx-auto mb-3" src="assets/mekanik/mekanik.png"
+            style="width: 80px; height: 80px" />
+          <h5 class="mb-0">Client Name</h5>
+          <p>Profession</p>
+          <div class="testimonial-text  text-center p-4">
+            <p class="mb-0">
+              Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam
+              amet diam et eos. Clita erat ipsum et lorem et sit.
+            </p>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Footer Start -->
-    <div
-      class="container-fluid bg-footer text-light footer pt-5 mt-5 wow fadeIn"
-      data-wow-delay="0.1s"
-    >
-      <div class="container py-5">
-        <div class="row g-5">
-          <div class="col-lg-3 col-md-6">
-            <h4 class="text-white mb-3">Tautan Cepat</h4>
-            <a class="btn btn-link" href="">Tentang Kami</a>
-            <a class="btn btn-link" href="">Hubungi Kami</a>
-            <a class="btn btn-link" href="">Kebijakan Privasi</a>
-            <a class="btn btn-link" href="">Syarat & Ketentuan</a>
-            <a class="btn btn-link" href="">FAQ & Bantuan</a>
+  <!-- Footer Start -->
+  <div class="container-fluid bg-footer text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+      <div class="row g-5">
+        <div class="col-lg-3 col-md-6">
+          <h4 class="text-white mb-3">Tautan Cepat</h4>
+          <a class="btn btn-link" href="">Tentang Kami</a>
+          <a class="btn btn-link" href="">Hubungi Kami</a>
+          <a class="btn btn-link" href="">Kebijakan Privasi</a>
+          <a class="btn btn-link" href="">Syarat & Ketentuan</a>
+          <a class="btn btn-link" href="">FAQ & Bantuan</a>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h4 class="text-white mb-3">Kontak</h4>
+          <p class="mb-2">
+            <i class="fa fa-map-marker-alt me-3"></i>Bengkel Melody Auto
+            Service, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13730
+          </p>
+          <p class="mb-2">
+            <i class="fa fa-phone-alt me-3"></i>+62 21 1234 5678
+          </p>
+          <p class="mb-2">
+            <i class="fa fa-envelope me-3"></i>kontak@melodyautoservice.com
+          </p>
+          <div class="d-flex pt-2">
+            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <h4 class="text-white mb-3">Kontak</h4>
-            <p class="mb-2">
-              <i class="fa fa-map-marker-alt me-3"></i>Bengkel Melody Auto
-              Service, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13730
-            </p>
-            <p class="mb-2">
-              <i class="fa fa-phone-alt me-3"></i>+62 21 1234 5678
-            </p>
-            <p class="mb-2">
-              <i class="fa fa-envelope me-3"></i>kontak@melodyautoservice.com
-            </p>
-            <div class="d-flex pt-2">
-              <a class="btn btn-outline-light btn-social" href=""
-                ><i class="fab fa-twitter"></i
-              ></a>
-              <a class="btn btn-outline-light btn-social" href=""
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a class="btn btn-outline-light btn-social" href=""
-                ><i class="fab fa-youtube"></i
-              ></a>
-              <a class="btn btn-outline-light btn-social" href=""
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <!-- <h4 class="text-white mb-3">Pratner Industri</h4>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <!-- <h4 class="text-white mb-3">Pratner Industri</h4>
             <div class="row g-2 pt-2">
               <div class="col-4">
                 <img
@@ -531,56 +446,54 @@
                 />
               </div>
             </div> -->
-          </div>
         </div>
       </div>
-      <div class="container">
-        <div class="copyright">
-          <div class="row">
-            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-              &copy;
-              <a class="border-bottom" href="#">Bengkel Melody Auto Service</a>,
-              Hak Cipta Dilindungi.
+    </div>
+    <div class="container">
+      <div class="copyright">
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            &copy;
+            <a class="border-bottom" href="#">Bengkel Melody Auto Service</a>,
+            Hak Cipta Dilindungi.
 
-              <!--/*** Template ini gratis selama Anda mempertahankan tautan kredit pembuat di footer. Jika Anda ingin menggunakan template ini tanpa tautan kredit pembuat di footer, Anda dapat membeli Lisensi Penghapusan Kredit dari "https://htmlcodex.com/credit-removal". Terima kasih atas dukungan Anda. ***/-->
-              Dirancang Oleh
-              <a class="border-bottom" href="http://webpass.my.id">webpass</a
-              ><br /><br />
-              <!-- Didistribusikan Oleh -->
-              <!-- <a class="border-bottom" href="https://themewagon.com"
+            <!--/*** Template ini gratis selama Anda mempertahankan tautan kredit pembuat di footer. Jika Anda ingin menggunakan template ini tanpa tautan kredit pembuat di footer, Anda dapat membeli Lisensi Penghapusan Kredit dari "https://htmlcodex.com/credit-removal". Terima kasih atas dukungan Anda. ***/-->
+            Dirancang Oleh
+            <a class="border-bottom" href="http://webpass.my.id">webpass</a><br /><br />
+            <!-- Didistribusikan Oleh -->
+            <!-- <a class="border-bottom" href="https://themewagon.com"
                 >ThemeWagon</a
               > -->
-            </div>
-            <div class="col-md-6 text-center text-md-end">
-              <div class="footer-menu">
-                <a href="">Beranda</a>
-                <a href="">Kebijakan Cookie</a>
-                <a href="">Bantuan</a>
-                <a href="">FAQ</a>
-              </div>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <div class="footer-menu">
+              <a href="">Beranda</a>
+              <a href="">Kebijakan Cookie</a>
+              <a href="">Bantuan</a>
+              <a href="">FAQ</a>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Footer End -->
+  </div>
+  <!-- Footer End -->
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
-      ><i class="bi bi-arrow-up"></i
-    ></a>
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-  </body>
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
+</body>
+
 </html>

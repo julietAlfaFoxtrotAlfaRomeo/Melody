@@ -1,7 +1,7 @@
 /* =========== TOPBAR =========== */
 .row1 {
   background-color: #26206b;
-  color: aliceblue;
+  color: rgb(0, 0, 0);
 }
 
 /* =========== NAVBAR =========== */
@@ -15,6 +15,7 @@
   width: 190px;
   height: auto;
 }
+
 .navbar-custom,
 .navbar-brand,
 .navbar-nav,
@@ -65,15 +66,18 @@
   justify-content: center;
   align-items: center;
 }
+
 /* VISMIS */
 
-.container- fluidbisnis{
+.container- fluidbisnis {
   margin-left: 40rem;
   /* width: 250rem; */
 }
+
 .vismis {
   width: 30rem;
 }
+
 /* =========== FOOTER =========== */
 .footer {
   position: relative;
@@ -103,6 +107,7 @@
 .bg-darki {
   background-color: #14183e !important;
 }
+
 .footer .btn.btn-social {
   margin-right: 5px;
   width: 40px;
@@ -201,6 +206,7 @@
 }
 
 @media (max-width: 768px) {
+
   /* Ukuran perangkat seluler kecil */
   .kartu {
     margin-left: 0 !important;

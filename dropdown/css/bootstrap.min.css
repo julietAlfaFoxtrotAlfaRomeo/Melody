@@ -18,7 +18,7 @@
     --bs-white: #fff;
     --bs-gray: #6c757d;
     --bs-gray-dark: #343a40;
-    --bs-primary: #000000;
+    --bs-primary: #ffffff;
     --bs-secondary: #0B2154;
     --bs-success: #198754;
     --bs-info: #0dcaf0;
@@ -84,7 +84,7 @@ h6,
     font-family: "Barlow", sans-serif;
     font-weight: 700;
     line-height: 1.2;
-    color: #0B2154
+    color: #ffffff
 }
 
 h1,
@@ -4721,7 +4721,7 @@ fieldset:disabled .btn {
 }
 
 .navbar-light .navbar-brand {
-    color: rgba(0, 0, 0, 0.9)
+    color: rgba(255, 255, 255, 0.9)
 }
 
 .navbar-light .navbar-brand:hover,
@@ -4730,7 +4730,7 @@ fieldset:disabled .btn {
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: rgba(0, 0, 0, 0.55)
+    color: rgba(255, 255, 255, 0.55)
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
@@ -4763,7 +4763,7 @@ fieldset:disabled .btn {
 .navbar-light .navbar-text a,
 .navbar-light .navbar-text a:hover,
 .navbar-light .navbar-text a:focus {
-    color: rgba(0, 0, 0, 0.9)
+    color: rgba(255, 255, 255, 0.9)
 }
 
 .navbar-dark .navbar-brand {
