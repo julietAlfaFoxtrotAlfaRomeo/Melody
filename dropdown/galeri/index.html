@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Produk</title>
+    <style>
+        :root {
+            --primary: #ff002b;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .buttons button {
+            margin: 0 10px 10px 10px;
+            padding: 10px 20px;
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .buttons button:hover {
+            background-color: #ff002b;
+            transform: scale(1.05);
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .category {
+            display: none;
+            flex-basis: 100%;
+        }
+
+        .category img {
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+            object-fit: cover;
+            margin: 10px;
+            border: 3px solid rgb(213, 213, 213);
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .category.aktif {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fadeIn 0.5s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (min-width: 768px) {
+            .gallery {
+                gap: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Galeri Produk</h1>
+    </header>
+
+    <div class="buttons">
+        <button onclick="showCategory('semua')">SEMUA PRODUK</button>
+        <button onclick="showCategory('terbaru')">TERBARU</button>
+        <button onclick="showCategory('makanan')">MAKANAN & MINUMAN</button>
+        <button onclick="showCategory('fashion')">FASHION</button>
+        <button onclick="showCategory('kosmetik')">KOSMETIK</button>
+        <button onclick="showCategory('kerajinan')">KERAJINAN</button>
+        <button onclick="showCategory('jasa')">JASA</button>
+        <button onclick="showCategory('dekorasi')">DEKORASI</button>
+        <button onclick="showCategory('aksesoris')">AKSESORIS</button>
+        <button onclick="showCategory('multiproduk')">MULTIPRODUK</button>
+    </div>
+
+    <div class="gallery">
+        <div class="category semua aktif">
+            <img src="https://via.placeholder.com/300" alt="Produk 1" />
+            <img src="https://via.placeholder.com/300" alt="Produk 2" />
+            <img src="https://via.placeholder.com/300" alt="Produk 3" />
+            <img src="https://via.placeholder.com/300" alt="Produk 4" />
+            <img src="https://via.placeholder.com/300" alt="Produk 5" />
+        </div>
+        <div class="category terbaru">
+            <img src="https://via.placeholder.com/300" alt="Produk 1" />
+            <img src="https://via.placeholder.com/300" alt="Produk 2" />
+            <img src="https://via.placeholder.com/300" alt="Produk 3" />
+            <img src="https://via.placeholder.com/300" alt="Produk 4" />
+            <img src="https://via.placeholder.com/300" alt="Produk 5" />
+        </div>
+        <div class="category makanan">
+            <img src="https://via.placeholder.com/300" alt="Produk 1" />
+            <img src="https://via.placeholder.com/300" alt="Produk 2" />
+            <img src="https://via.placeholder.com/300" alt="Produk 3" />
+            <img src="https://via.placeholder.com/300" alt="Produk 4" />
+            <img src="https://via.placeholder.com/300" alt="Produk 5" />
+        </div>
+        <div class="category fashion">
+            <img src="https://via.placeholder.com/300" alt="Produk 1" />
+            <img src="https://via.placeholder.com/300" alt="Produk 2" />
+            <img src="https://via.placeholder.com/300" alt="Produk 3" />
+            <img src="https://via.placeholder.com/300" alt="Produk 4" />
+            <img src="https://via.placeholder.com/300" alt="Produk 5" />
+        </div>
+        <div class="category kosmetik">
+            <img src="https://via.placeholder.com/300" alt="Produk 1" />
+            <img src="https://via.placeholder.com/300" alt="Produk 2" />
+            <img src="https://via.placeholder.com/300" alt="Produk 3" />
+            <img src="https://via.placeholder.com/300" alt="Produk 4" />
+            <img src="https://via.placeholder.com/300" alt="Produk 5" />
+        </div>
+        <div class="category kerajinan">
+            <img src="https://via.placeholder.com/300" alt="Produk 1" />
+            <img src="https://via.placeholder.com/300" alt="Produk 2" />
+            <img src="https://via.placeholder.com/300" alt="Produk 3" />
+            <img src="https://via.placeholder.com/300" alt="Produk 4" />
+            <img src="https://via.placeholder.com/300" alt="Produk 5" />
+        </div>
+        <div class="category jasa">
+            <img src="https://via.placeholder.com/300" alt="Produk 1" />
+            <img src="https://via.placeholder.com/300" alt="Produk 2" />
+            <img src="https://via.placeholder.com/300" alt="Produk 3" />
+            <img src="https://via.placeholder.com/300" alt="Produk 4" />
+            <img src="https://via.placeholder.com/300" alt="Produk 5" />
+        </div>
+        <div class="category dekorasi">
+            <img src="https://via.placeholder.com/300" alt="Produk 1" />
+            <img src="https://via.placeholder.com/300" alt="Produk 2" />
+            <img src="https://via.placeholder.com/300" alt="Produk 3" />
+            <img src="https://via.placeholder.com/300" alt="Produk 4" />
+            <img src="https://via.placeholder.com/300" alt="Produk 5" />
+        </div>
+        <div class="category aksesoris">
+            <img src="https://via.placeholder.com/300" alt="Produk 1" />
+            <img src="https://via.placeholder.com/300" alt="Produk 2" />
+            <img src="https://via.placeholder.com/300" alt="Produk 3" />
+            <img src="https://via.placeholder.com/300" alt="Produk 4" />
+            <img src="https://via.placeholder.com/300" alt="Produk 5" />
+        </div>
+        <div class="category multiproduk">
+            <img src="https://via.placeholder.com/300" alt="Produk 1" />
+            <img src="https://via.placeholder.com/300" alt="Produk 2" />
+            <img src="https://via.placeholder.com/300" alt="Produk 3" />
+            <img src="https://via.placeholder.com/300" alt="Produk 4" />
+            <img src="https://via.placeholder.com/300" alt="Produk 5" />
+        </div>
+    </div>
+
+    <div class="text-center">
+        <a href="#" class="read-more bg-abu">Lihat Seluruh Produk</a>
+    </div>
+    <script>
+        function showCategory(category) {
+            var categories = document.querySelectorAll(".category");
+
+            categories.forEach(function (cat) {
+                if (category === "semua") {
+                    cat.classList.add("aktif");
+                } else {
+                    if (cat.classList.contains(category)) {
+                        cat.classList.add("aktif");
+                    } else {
+                        cat.classList.remove("aktif");
+                    }
+                }
+            });
+        }
+
+        showCategory("terbaru"); // Menampilkan kategori "Terbaru" secara default
+    </script>
